@@ -29,6 +29,18 @@ int main()
 			break;
 		}
 	}
+	if (nepoln)
+	{
+		cout << "An error has occurred while reading the input sequence.";
+		system("pause");
+		return-1;
+	}
+	if (ubyvan)
+	{
+		cout << "The input sequence must be non-decreasing.";
+		system("pause");
+		return-1;
+	}
 	getline(cin, str2);
 	istringstream stream1(str2);
 	for (int i = 0; i < 10; i++)
